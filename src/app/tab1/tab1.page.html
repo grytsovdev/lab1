@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Лабораторна робота №1</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-title>Виконав студент групи КН-32 Грицов Я.О.</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content :fullscreen="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title> Завдання №1 </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p class="p_background">
+        Задано три числа.Якщо всі вони кратні 5, то знайти їх суму.В іншому
+        випадку–куб суми
+      </p>
+      <ion-item>
+        <ion-label position="floating">Перше число</ion-label>
+        <ion-input
+          class="input"
+          type="number"
+          id="a"
+          value="1"
+          #InputA
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Перше число</ion-label>
+        <ion-input
+          class="input"
+          type="number"
+          id="b"
+          value="2"
+          #InputB
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Перше число</ion-label>
+        <ion-input
+          class="input"
+          type="number"
+          id="c"
+          value="3"
+          #InputC
+        ></ion-input>
+      </ion-item>
+      <ion-button
+        class="button"
+        (click)="sum(InputA.value,InputB.value,InputC.value)"
+        >Розрахунок</ion-button
+      >
+      <ion-item>
+        <p>Резульятат обчислення {{d}}</p>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
