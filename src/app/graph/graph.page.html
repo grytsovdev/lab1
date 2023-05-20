@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Лабораторна робота №2</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-title>Виконав студент групи КН-32 Грицов Я.О.</ion-title>
+  </ion-toolbar>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button color="dark" menu="first"></ion-menu-button>
+    </ion-buttons>
+    <ion-title> Лабораторні роботи </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content :fullscreen="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title> Завдання №1 </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p class="p_background">
+        Задано три числа.Якщо всі вони кратні 5, то знайти їх суму.В іншому
+        випадку–куб суми
+      </p>
+      <ion-item>
+        <ion-label position="floating">Xn</ion-label>
+        <ion-input
+          class="input"
+          type="number"
+          id="xn"
+          value="-4.2"
+          #Inputxn></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Xk</ion-label>
+        <ion-input
+          class="input"
+          type="number"
+          id="xk"
+          value="28.1"
+          #Inputxk></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">a</ion-label>
+        <ion-input
+          class="input"
+          type="number"
+          id="a"
+          value="0.1"
+          #Inputa></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">h</ion-label>
+        <ion-input
+          class="input"
+          type="number"
+          id="h"
+          value="0.1"
+          #Inputh></ion-input>
+      </ion-item>
+      <ion-button class="button" (click)="graphras(Inputxn.value,Inputxk.value,Inputa.value,Inputh.value)">Розрахунок</ion-button>
+      <ion-item>
+        <canvas #lineCanvas></canvas>
+      </ion-item>
+      <ion-item *ngFor="let item of data1"> {{item}} </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
