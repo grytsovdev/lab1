@@ -13,6 +13,10 @@ const routes: Routes = [
   {
     path: 'json',
     loadChildren: () => import('./json/json.module').then( m => m.JSONPageModule)
+  },
+  {
+    path: 'abstract',
+    loadChildren: () => import('./abstract/abstract.module').then( m => m.AbstractPageModule)
   }
 
 ];
