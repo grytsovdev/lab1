@@ -8,19 +8,19 @@ const routes: Routes = [
   },
   {
     path: 'graph',
-    loadChildren: () => import('./graph/graph.module').then( m => m.GraphPageModule)
+    loadChildren: () => import('./graph/graph.module').then(m => m.GraphPageModule)
   },
   {
     path: 'json',
-    loadChildren: () => import('./json/json.module').then( m => m.JSONPageModule)
+    loadChildren: () => import('./json/json.module').then(m => m.JSONPageModule)
   },
   {
     path: 'abstract',
-    loadChildren: () => import('./abstract/abstract.module').then( m => m.AbstractPageModule)
+    loadChildren: () => import('./abstract/abstract.module').then(m => m.AbstractPageModule)
   },
   {
     path: 'interface',
-    loadChildren: () => import('./interface/interface.module').then( m => m.InterfacePageModule)
+    loadChildren: () => import('./interface/interface.module').then(m => m.InterfacePageModule)
   }
 
 ];

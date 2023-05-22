@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Лабораторна робота №3</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-title>Виконав студент групи КН-32 Грицов Я.О.</ion-title>
+  </ion-toolbar>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button color="dark" menu="first"></ion-menu-button>
+    </ion-buttons>
+    <ion-title> Лабораторні роботи </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-title size="large">Завдання</ion-card-title>
+    <p>1.Розробити ієрархію класів відповідно до варіанту завдання(у
+      запропоновану у варіанті ієрархію класів можна додавати додаткові
+      класи або інтерфейси). Деякі з класів можуть бути абстрактними.<br>
+      2. Реалізувати для ієрархії механізм
+      інтерфейсів, при цьому один з класів повинен реалізовувати як мінімум
+      два інтерфейси.<br>
+      3. Кожен клас з ієрархії класів повинен мати не менше двох методів.<br>
+      4. Розроблена ієрархія повинна відповідати основним принципам SOLID
+      та патерну High Cohesion + Low Coupling
+    </p>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-button (click)="ras();">Розрахунок</ion-button>
+      <p class="result">{{show}}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
