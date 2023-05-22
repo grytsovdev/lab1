@@ -10,18 +10,18 @@ export class RecursionService {
   constructor(@Optional() private logService: LogService) { }
   getSeriesRecursive(x: number, n: number = 1): number {
     if (n === 1) {
-      return 1; // Base case: when n is 1, the first term is 1
+      return 1;
     }
 
-    const term = Math.pow(x, n - 1) / this.factorial(n - 1); // Calculate the current term
-    const previousSum = this.getSeriesRecursive(x, n - 1); // Recursive call to calculate the sum of previous terms
+    const term = Math.pow(x, n - 1) / this.factorial(n - 1);
+    const previousSum = this.getSeriesRecursive(x, n - 1);
 
-    return previousSum + term; // Return the sum of previous terms plus the current term
+    return previousSum + term;
   }
 
   factorial(n: number): number {
     if (n === 0) {
-      return 1; // Base case: factorial of 0 is 1
+      return 1;
     }
 
     let result = 1;
@@ -29,7 +29,7 @@ export class RecursionService {
       result *= i;
     }
 
-    return result; // Return the calculated factorial
+    return result;
   }
 
   getTab(xn: number = 0, xk: number = 1, h: number = 0.1) {
