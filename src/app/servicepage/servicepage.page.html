@@ -1,0 +1,56 @@
+<app-my-header name="Лабораторна робота №7"></app-my-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <h1>Завдання</h1>
+      <p>Провести табулюваняя, обрахувати за допомогою циклу та рекурісії
+        наступну функцію</p>
+      <div class="img_formula"></div>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-item>
+          <ion-label>
+            xn
+          </ion-label>
+          <ion-input #InputXn value="0"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>
+            xk
+          </ion-label>
+          <ion-input #InputXk value="1"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>
+            h
+          </ion-label>
+          <ion-input #Inputh value="0.1"></ion-input>
+        </ion-item>
+      </ion-item>
+      <ion-button (click)="ras(InputXn.value,InputXk.value,Inputh.value)">
+        Розрахунок</ion-button>
+      <ion-card>
+        <ion-card-title>Результати розрахунку</ion-card-title>
+        <ion-card-content>
+          <ion-list>
+            <ion-item *ngFor="let item of xyInput | keyvalue">
+              <ion-label>
+                <h5>{{item.key}}</h5>
+                <h5>{{item.value}}</h5>
+              </ion-label>
+            </ion-item>
+
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

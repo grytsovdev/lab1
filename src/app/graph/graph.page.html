@@ -1,17 +1,5 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Лабораторна робота №2</ion-title>
-  </ion-toolbar>
-  <ion-toolbar>
-    <ion-title>Виконав студент групи КН-32 Грицов Я.О.</ion-title>
-  </ion-toolbar>
-  <ion-toolbar color="primary">
-    <ion-buttons slot="start">
-      <ion-menu-button color="dark" menu="first"></ion-menu-button>
-    </ion-buttons>
-    <ion-title> Лабораторні роботи </ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-my-header name="Лабораторна робота №2"></app-my-header>
+
 <ion-content :fullscreen="true">
   <ion-card>
     <ion-card-header>
@@ -58,7 +46,8 @@
           value="0.1"
           #Inputh></ion-input>
       </ion-item>
-      <ion-button class="button" (click)="graphras(Inputxn.value,Inputxk.value,Inputa.value,Inputh.value)">Розрахунок</ion-button>
+      <ion-button class="button"
+        (click)="graphras(Inputxn.value,Inputxk.value,Inputa.value,Inputh.value)">Розрахунок</ion-button>
       <ion-item>
         <canvas #lineCanvas></canvas>
       </ion-item>

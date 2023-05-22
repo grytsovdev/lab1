@@ -4,20 +4,19 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { JSONPageRoutingModule } from './json-routing.module';
+import { ServicepagePageRoutingModule } from './servicepage-routing.module';
 
-import { JSONPage } from './json.page';
+import { ServicepagePage } from './servicepage.page';
 import { MyHeaderModule } from '../my-header/my-header.component.module';
-
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    JSONPageRoutingModule,
+    ServicepagePageRoutingModule,
     MyHeaderModule
   ],
-  declarations: [JSONPage]
+  declarations: [ServicepagePage]
 })
-export class JSONPageModule { }
+export class ServicepagePageModule { }

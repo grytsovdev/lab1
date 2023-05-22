@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { AbstractPageRoutingModule } from './abstract-routing.module';
 
 import { AbstractPage } from './abstract.page';
+import { MyHeaderModule } from '../my-header/my-header.component.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AbstractPageRoutingModule
+    AbstractPageRoutingModule,
+    MyHeaderModule
   ],
   declarations: [AbstractPage]
 })
-export class AbstractPageModule {}
+export class AbstractPageModule { }
