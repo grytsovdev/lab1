@@ -6,7 +6,7 @@ import { Tab1Page } from './tab1.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { Tab1PageRoutingModule } from './tab1-routing.module';
-
+import { MyHeaderComponent } from '../my-header/my-header.component';
 @NgModule({
   imports: [
     IonicModule,
@@ -15,6 +15,6 @@ import { Tab1PageRoutingModule } from './tab1-routing.module';
     ExploreContainerComponentModule,
     Tab1PageRoutingModule
   ],
-  declarations: [Tab1Page]
+  declarations: [Tab1Page, MyHeaderComponent]
 })
-export class Tab1PageModule {}
+export class Tab1PageModule { }

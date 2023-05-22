@@ -10,7 +10,7 @@
       <ion-menu-button color="dark" menu="first"></ion-menu-button>
     </ion-buttons>
     <ion-title> Лабораторні роботи
-       </ion-title>
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content :fullscreen="true">
@@ -35,7 +35,8 @@
         <ion-label position="floating">Перше число</ion-label>
         <ion-input class="input" type="number" id="c" value="3" #InputC></ion-input>
       </ion-item>
-      <ion-button class="button" (click)="sum(InputA.value,InputB.value,InputC.value)">Розрахунок</ion-button>
+      <ion-button class="button"
+        (click)="sum(InputA.value,InputB.value,InputC.value)">Розрахунок</ion-button>
       <ion-item>
         <p>Резульятат обчислення {{d}}</p>
       </ion-item>

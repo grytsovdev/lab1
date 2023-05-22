@@ -8,6 +8,7 @@ import { JSONPageRoutingModule } from './json-routing.module';
 
 import { JSONPage } from './json.page';
 
+
 @NgModule({
   imports: [
     CommonModule,
@@ -17,4 +18,4 @@ import { JSONPage } from './json.page';
   ],
   declarations: [JSONPage]
 })
-export class JSONPageModule {}
+export class JSONPageModule { }
