@@ -6,15 +6,17 @@ import { Tab1Page } from './tab1.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { Tab1PageRoutingModule } from './tab1-routing.module';
-import { MyHeaderComponent } from '../my-header/my-header.component';
+import { MyHeaderModule } from '../my-header/my-header.component.module';
+
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    Tab1PageRoutingModule
+    Tab1PageRoutingModule,
+    MyHeaderModule
   ],
-  declarations: [Tab1Page, MyHeaderComponent]
+  declarations: [Tab1Page]
 })
 export class Tab1PageModule { }
