@@ -17,5 +17,9 @@ describe('Boat Testing', () => {
         let expectedPrice = 180;
         expect(price).toBe(expectedPrice)
     })
+    it("Перевірка методу show()", () => {
+        boat = new Boat(6, "Одеса")
+        expect(boat.show()).toContain("Одеса")
+    })
 
 });

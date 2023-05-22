@@ -18,4 +18,9 @@ describe('Plane Testing', () => {
         expect(price).toBe(expectedPrice)
     })
 
+    it("Перевірка методу show()", () => {
+        plane = new Plane(10, 15)
+        expect(plane.show()).toContain("Літак")
+    })
+
 });
